@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "pixel";
+    src: url("fonts/PIXEARG_.TTF");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "tahoma";
+    overflow-x: hidden;
+    font-size: 14px;
+}
+
+#cabeçalho1 {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    color: black;
+    border-bottom: 4px solid rgb(203, 27, 32);
+}
+
+#cabeçalho2 {
+    position: relative;
+    width: 100%;
+    height: 12px;
+    background-color: white;
+    backdrop-filter: blur(4px);
+    padding: 20px;
+    color: black;
+    font-size: 13px;
+    line-height: 18px;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top: 1px;
+
+}
+
+#infos {
+    position: relative;
+    width: 275px;
+    height: 280px;
+    background-color: white;
+    backdrop-filter: blur(4px);
+    padding: 10px; /*mexer nisso*/
+    margin: 5px;
+    color: gray;
+    border: 1px solid lightgray
+}
+
+#infos img {
+    border: 2px solid lightgray;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 5px;
+}
+details {
+    margin-bottom: 5px;
+}
+
+summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 4px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: "+";
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+summary img {
+    width: 16px;
+    margin: -4px;
+}
+
+details[open] > summary::before {
+    content: "-";
+}
+
+.subitem {
+    margin-left: 15px;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0px;
+    border-left: 1px dotted gray;
+}
+
+li {
+    position: relative;
+    margin: 6px 0;
+}
+
+#f1 img {
+    width: 12px;
+    margin-right: 5px;
+}
+
+li::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -18px;
+    width: 18px;
+    border-top: 1px dotted gray;
+}
+
+.menu-item {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-item:visited {
+    color: black;
+}
+
+#conteudo {
+    position: absolute;
+    margin-top: -700px;
+    margin-left: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 80px; /* vertical / horizontal */
+}
+
+#conteudo > div {
+    width: 200px; /* controla largura das colunas */
+}
